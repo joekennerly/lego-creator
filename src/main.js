@@ -13,7 +13,7 @@ function makeString(createdObject) {
   return `
   <section class="legoElement">
     <p>${createdObject.creator} made a ${createdObject.color} ${createdObject.shape} for the ${createdObject.creation}</p>
-  </section
+  </section>
   `
 }
 
@@ -39,6 +39,6 @@ document.querySelector(".lego-save").addEventListener("click", event => {
         "Content-Type": "application/json"
     },
     body: JSON.stringify(legoToSave)
-})
+  })
 
 })
